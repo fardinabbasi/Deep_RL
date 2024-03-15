@@ -13,6 +13,7 @@ The action is discrete, deterministic, and represents the torque applied on the 
 | 2 | apply 1 torque to the actuated joint | torque (N.m) |
 
 **Observation Space**
+
 The observation provides information about the two rotational joint angles as well as their angular velocities:
 | Num | Observation | Min | Max|
 | --- | --- | --- | --- |
@@ -22,6 +23,15 @@ The observation provides information about the two rotational joint angles as we
 | 3 | $$sin(\theta_2)$$ | -1 | 1 |
 | 4 | Angular velocity of $\theta_1$ | $$~ -12.567(4 \times \pi)$$ | $$~ 12.567(-4 \times \pi)$$ |
 | 5 | Angular velocity of $\theta_2$ | $$~ -28.274 (9 \times \pi)$$ | $$~ 28.274 (9 \times \pi)$$ |
+
+_where_
+* $\theta_1$ is the angle of the first joint, where an angle of 0 indicates the first link is pointing directly downwards.
+* $\theta_2$ is relative to the angle of the first link. An angle of 0 corresponds to having the same angle between the two links.
+
+**Rewards**
+
+The goal is to have the free end reach a designated target height in as few steps as possible, and as such all steps that do not reach the goal incur a reward of -1. Achieving the target height results in termination with a reward of 0. The reward threshold is -100.
+
 # References
 * Sutton, R. S., & Barto, A. G. (2018). Reinforcement Learning, second edition: An Introduction. MIT Press.
 * [Dueling DQN](https://wikidocs.net/174647) - EN. (n.d.-b). 위키독스.
