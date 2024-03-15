@@ -31,7 +31,7 @@ _where_
 
 **Rewards**
 
-The goal is to have the free end reach a designated **target height** in as few steps as possible, and as such all steps that do not reach the goal incur a reward of -1. Achieving the target height results in termination with a reward of 0. The reward threshold is -100.
+The goal is to have the free end reach a designated **target height** in as few steps as possible, and as such all steps that do not reach the goal incur a reward of -1. Achieving the target height results in termination with a reward of 0.
 ## Deep Q-Learning (DQN)
 The problem with traditional Q-learning is that the size of the Q-table grows exponentially with the number of states and actions, making it impractical for many problems. To address this, deep Q-learning (DQN) was introduced, which uses a **neural network** to approximate the Q-values. As a universal function approximator, the neural network is able to capture the relationships between states and actions more efficiently than the Q-table.
 <img src="/readme_images/DQL.png" width="1293" height="586">
