@@ -1,4 +1,6 @@
 # Deep RL
+In many practical decision-making problems, the states $s$ of the MDP are high-dimensional and cannot be solved by traditional RL algorithms. Deep reinforcement learning algorithms incorporate deep learning to solve such MDPs, often representing the policy $\pi(a|s)$
+ or other learned functions as a neural network and developing specialized algorithms that perform well in this setting.
 ## Acrobot Environment
 ### Description
 The [acrobot environment](https://www.gymlibrary.dev/environments/classic_control/acrobot/) is a system consisting of two links connected linearly to form a chain, with one end of the chain fixed. The joint between the two links is actuated. The goal is to apply torques on the actuated joint to swing the free end of the linear chain above a given height while starting from the initial state of hanging downwards.
@@ -32,7 +34,14 @@ _where_
 
 The goal is to have the free end reach a designated target height in as few steps as possible, and as such all steps that do not reach the goal incur a reward of -1. Achieving the target height results in termination with a reward of 0. The reward threshold is -100.
 ## Deep Q-Learning
+The problem with traditional Q-learning is that the size of the Q-table grows exponentially with the number of states and actions, making it impractical for many problems. To address this, deep Q-learning (DQN) was introduced, which uses a neural network to approximate the Q-values. As a universal function approximator, the neural network is able to capture the relationships between states and actions more efficiently than the Q-table.
 <img src="/readme_images/DQL.png">
+
+However, one issue with using a neural network to learn the Q-values is that the update rule depends on the values produced by the network itself, which can make convergence difficult. To address this, the DQN algorithm introduces the use of a replay buffer and target networks. The replay buffer stores past interactions as a list of tuples, which can be sampled to update the value and policy networks. This allows the network to learn from individual tuples multiple times and reduces dependence on the current experience. The target network is a time-delayed copy of the Q-networks, and its parameters are updated according to the following equation:
+$$\theta_\hat{Q} = \tau \times \theta_Q + (1-\tau)\theta_\hat{Q}$$
+The pseudocode of the DQN algorithm is written as follows:
+
+<img src="/readme_images/DQN_pseudocode.png">
 
 # References
 * Sutton, R. S., & Barto, A. G. (2018). Reinforcement Learning, second edition: An Introduction. MIT Press.
