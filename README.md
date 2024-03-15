@@ -42,7 +42,11 @@ $$\theta_\hat{Q} = \tau \times \theta_Q + (1-\tau)\theta_\hat{Q}$$
 The pseudocode of the DQN algorithm is written as follows:
 
 <img src="/readme_images/DQN_pseudocode.png">
+The trainig results for the DQN agent are depicted below.
 
+| Reward Plot | Video |
+| --- | --- |
+| <img src="/readme_images/DQN_r.png"> | <img src="/readme_images/DQN.gif"> |
 ## Dueling Deep Q-Learning (Dueling DQN)
 The dueling DQN algorithm seeks to improve upon traditional DQN by decomposing the Q-values into two separate components: the value function, $V(s)$, and the advantage function, $A(s,a)$. The value function represents the expected reward for a given state, s, while the advantage function reflects the relative advantage of taking a particular action, a, compared to other actions. By combining these two functions, it is possible to compute the full Q-values for each state-action pair.
 
