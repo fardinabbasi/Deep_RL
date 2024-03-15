@@ -64,4 +64,5 @@ The trainig results for the Dueling DQN agent are depicted below.
 * [Dueling DQN](https://wikidocs.net/174647) - EN. (n.d.-b). 위키독스.
 * ChienTeLee. (n.d.-b). GitHub - ChienTeLee/dueling_dqn_lunar_lander. [GitHub](https://github.com/ChienTeLee/dueling_dqn_lunar_lander).
 * Cyoon. (n.d.-d). GitHub - cyoon1729/deep-Q-networks: Implementations of algorithms from the Q-learning family. Implementations inlcude: DQN, DDQN, Dueling DQN, PER+DQN, Noisy DQN, C51. [GitHub](https://github.com/cyoon1729/deep-Q-networks).
+* Tutorial: [From Tabular Q-Learning to DQN](https://araffin.github.io/slides/dqn-tutorial/). (n.d.).
 * Acrobot - [Gym Documentation](https://www.gymlibrary.dev/environments/classic_control/acrobot/). (n.d.).
