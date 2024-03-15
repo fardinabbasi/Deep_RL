@@ -32,6 +32,8 @@ _where_
 
 The goal is to have the free end reach a designated target height in as few steps as possible, and as such all steps that do not reach the goal incur a reward of -1. Achieving the target height results in termination with a reward of 0. The reward threshold is -100.
 ## Deep Q-Learning
+<img src="/readme_images/DQL.png">
+
 # References
 * Sutton, R. S., & Barto, A. G. (2018). Reinforcement Learning, second edition: An Introduction. MIT Press.
 * [Dueling DQN](https://wikidocs.net/174647) - EN. (n.d.-b). 위키독스.
