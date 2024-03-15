@@ -23,7 +23,7 @@ The observation provides information about the two rotational joint angles as we
 | 1 | $$sin(\theta_1)$$ | -1 | 1 |
 | 2 | $$cos(\theta_2)$$ | -1 | 1 |
 | 3 | $$sin(\theta_2)$$ | -1 | 1 |
-| 4 | Angular velocity of $\theta_1$ | $$~ -12.567(4 \times \pi)$$ | $$~ 12.567(-4 \times \pi)$$ |
+| 4 | Angular velocity of $\theta_1$ | $$~ -12.567(4 \times \pi)$$ | $$~ 12.567(4 \times \pi)$$ |
 | 5 | Angular velocity of $\theta_2$ | $$~ -28.274 (9 \times \pi)$$ | $$~ 28.274 (9 \times \pi)$$ |
 
 _where_
