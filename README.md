@@ -54,6 +54,11 @@ The dueling DQN algorithm seeks to improve upon traditional DQN by decomposing t
 To implement this decomposition, the dueling DQN algorithm introduces a neural network with two separate output layers, one for the value function and one for the advantage function. These outputs are then combined to produce the final Q-values. This modification allows the network to learn more efficiently in situations where the exact values of individual actions are not as important, as it can focus on learning the value function for the state.
 
 $$Q(s,a) = V(s) +(A(s,a)- \frac{1}{|A|}\sum_a A(s,a))$$
+The trainig results for the Dueling DQN agent are depicted below.
+
+| Reward Plot | Video |
+| --- | --- |
+| <img src="/readme_images/Duel_r.png"> | <img src="/readme_images/Dueling-DQN.gif"> |
 # References
 * Sutton, R. S., & Barto, A. G. (2018). Reinforcement Learning, second edition: An Introduction. MIT Press.
 * [Dueling DQN](https://wikidocs.net/174647) - EN. (n.d.-b). 위키독스.
