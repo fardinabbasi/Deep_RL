@@ -35,13 +35,13 @@ _where_
 The goal is to have the free end reach a designated target height in as few steps as possible, and as such all steps that do not reach the goal incur a reward of -1. Achieving the target height results in termination with a reward of 0. The reward threshold is -100.
 ## Deep Q-Learning (DQN)
 The problem with traditional Q-learning is that the size of the Q-table grows exponentially with the number of states and actions, making it impractical for many problems. To address this, deep Q-learning (DQN) was introduced, which uses a neural network to approximate the Q-values. As a universal function approximator, the neural network is able to capture the relationships between states and actions more efficiently than the Q-table.
-<img src="/readme_images/DQL.png">
+<img src="/readme_images/DQL.png" width="1293" height="586">
 
 However, one issue with using a neural network to learn the Q-values is that the update rule depends on the values produced by the network itself, which can make convergence difficult. To address this, the DQN algorithm introduces the use of a replay buffer and target networks. The replay buffer stores past interactions as a list of tuples, which can be sampled to update the value and policy networks. This allows the network to learn from individual tuples multiple times and reduces dependence on the current experience. The target network is a time-delayed copy of the Q-network, and its parameters are updated according to the following equation:
 $$\theta_\hat{Q} = \tau \times \theta_Q + (1-\tau)\theta_\hat{Q}$$
 The pseudocode of the DQN algorithm is written as follows:
 
-<img src="/readme_images/DQN_pseudocode.png">
+<img src="/readme_images/DQN_pseudocode.png" width="1131" height="742">
 The trainig results for the DQN agent are depicted below.
 
 | Reward Plot | Video |
