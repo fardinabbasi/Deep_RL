@@ -1,4 +1,4 @@
-# Deep RL
+# Deep Reinforcement Learning
 In many practical decision-making problems, the states $s$ of the MDP are **high-dimensional** and cannot be solved by traditional RL algorithms. Deep reinforcement learning algorithms incorporate deep learning to solve such MDPs, often representing the policy $\pi(a|s)$ or other learned functions as a neural network and developing specialized algorithms that perform well in this setting.
 ## Acrobot Environment
 ### Description
