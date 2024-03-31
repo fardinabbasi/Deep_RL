@@ -40,7 +40,7 @@ However, one issue with using a neural network to learn the Q-values is that the
 $$\theta_\hat{Q} = \tau \times \theta_Q + (1-\tau)\theta_\hat{Q}$$
 The pseudocode of the DQN algorithm is written as follows:
 
-<img src="/readme_images/DQN_pseudocode.png" width="1131" height="742">
+<img src="/readme_images/DQN_pseudocode.png" width="549" height="549">
 The trainig results for the DQN agent are depicted below.
 
 | Reward Plot | Video |
