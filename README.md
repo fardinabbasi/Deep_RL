@@ -1,5 +1,5 @@
 # Deep Reinforcement Learning
-In many practical decision-making problems, the states $s$ of the MDP are **high-dimensional** and cannot be solved by traditional RL algorithms. Deep reinforcement learning algorithms incorporate deep learning to solve such MDPs, often representing the policy $\pi(a|s)$ or other learned functions as a neural network and developing specialized algorithms that perform well in this setting.
+In many practical decision-making problems, the states $s$ of the MDP are **high-dimensional** and cannot be solved by classic RL algorithms. Deep reinforcement learning algorithms incorporate deep learning to solve such MDPs, often representing the policy $\pi(a|s)$ or other learned functions as a neural network and developing specialized algorithms that perform well in this setting.
 ## Acrobot Environment
 ### Description
 The [acrobot environment](https://www.gymlibrary.dev/environments/classic_control/acrobot/) is a system consisting of two links connected linearly to form a chain, with one end of the chain fixed. The joint between the two links is actuated. The goal is to apply torques on the actuated joint to swing the free end of the linear chain above a given height while starting from the initial state of hanging downwards.
