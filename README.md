@@ -37,7 +37,9 @@ The problem with traditional Q-learning is that the size of the Q-table grows ex
 <img src="/readme_images/DQL.png" width="1293" height="586">
 
 However, one issue with using a neural network to learn the Q-values is that the **update rule depends on the values produced by the network itself**, which can make **convergence difficult**. To address this, the DQN algorithm introduces the use of a **replay buffer** and **target networks**. The replay buffer stores past interactions as a list of tuples, which can be sampled to update the value and policy networks. This allows the network to learn from individual tuples multiple times and reduces dependence on the current experience. The target network is a **time-delayed copy** of the Q-network, and its parameters are updated according to the following equation:
+
 $$\theta_\hat{Q} = \tau \times \theta_Q + (1-\tau)\theta_\hat{Q}$$
+
 The pseudocode of the DQN algorithm is written as follows:
 
 <img src="/readme_images/DQN_pseudocode.png" width="549" height="549">
