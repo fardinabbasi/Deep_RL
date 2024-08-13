@@ -68,3 +68,9 @@ The trainig results for the Dueling DQN agent are depicted below.
 * Cyoon. (n.d.-d). GitHub - cyoon1729/deep-Q-networks: Implementations of algorithms from the Q-learning family. Implementations inlcude: DQN, DDQN, Dueling DQN, PER+DQN, Noisy DQN, C51. [GitHub](https://github.com/cyoon1729/deep-Q-networks).
 * Tutorial: [From Tabular Q-Learning to DQN](https://araffin.github.io/slides/dqn-tutorial/). (n.d.).
 * Acrobot - [Gym Documentation](https://www.gymlibrary.dev/environments/classic_control/acrobot/). (n.d.).
+
+## Course Description
+- **Course**: Interactive Learning [ECE 641]
+- **Semester**: Fall 2023
+- **Institution:** [School of Electrical & Computer Engineering](https://ece.ut.ac.ir/en/), [College of Engineering](https://eng.ut.ac.ir/en), [University of Tehran](https://ut.ac.ir/en)
+- **Instructor:** Prof. Nili-Ahmadabadi
